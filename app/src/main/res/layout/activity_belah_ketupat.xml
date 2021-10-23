@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_toEndOf="@+id/linearLayout1"
+        android:textStyle="bold"
+        android:text="MENGHITUNG BELAH KETUPAT" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:textStyle="bold"
+        android:text="Masukan Nilai Sisi (s) :"
+        android:layout_below="@+id/textView18"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Masukan Nilai Diagonal 1 (d1) :"
+        android:layout_below="@+id/stxt"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Masukan Nilai Diagonal 2 (d2) :"
+        android:layout_below="@+id/d1txt"
+        android:layout_alignStart="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginBottom="130dp"
+        android:text="HASIL :" />
+
+    <EditText
+        android:id="@+id/stxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/textView19"
+        android:layout_alignStart="@+id/d1txt" />
+
+    <EditText
+        android:id="@+id/d1txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/textView20"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/d2txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/textView21"
+        android:layout_alignStart="@+id/d1txt" />
+
+    <EditText
+        android:id="@+id/hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/d2txt"
+        android:layout_alignTop="@+id/textView22"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/luas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/d2txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="LUAS"
+        android:onClick="luas5"/>
+
+    <Button
+        android:id="@+id/keliling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/luas"
+        android:layout_centerHorizontal="true"
+        android:text="KELILING"
+        android:onClick="keliling5"/>
+
+    <Button
+        android:id="@+id/kembali"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp"
+        android:text="KEMBALI"
+        android:onClick="kembali5"/>
+</RelativeLayout>

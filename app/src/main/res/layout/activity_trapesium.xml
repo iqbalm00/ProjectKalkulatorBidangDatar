@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/kembali"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:text="KEMBALI"
+        android:onClick="kembali7"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/keliling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KELILING"
+        android:onClick="keliling7"
+        android:layout_above="@+id/textView34"
+        android:layout_toEndOf="@+id/linearLayout1" />
+
+    <Button
+        android:id="@+id/luas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/keliling"
+        android:layout_centerHorizontal="true"
+        android:text="LUAS"
+        android:onClick="luas7"/>
+
+    <EditText
+        android:id="@+id/hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_above="@+id/kembali"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp" />
+
+    <EditText
+        android:id="@+id/ttxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/datxt"
+        android:layout_alignStart="@+id/datxt"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/datxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/cdtxt"
+        android:layout_toEndOf="@+id/textView32" />
+
+    <EditText
+        android:id="@+id/abtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/textView29"
+        android:layout_toEndOf="@+id/textView32" />
+
+    <EditText
+        android:id="@+id/cdtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/bctxt"
+        android:layout_toEndOf="@+id/textView32" />
+
+    <EditText
+        android:id="@+id/bctxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/abtxt"
+        android:layout_alignStart="@+id/abtxt" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/linearLayout1"
+        android:layout_toEndOf="@+id/linearLayout1"
+        android:textStyle="bold"
+        android:text="MENGHITUNG TRAPESIUM" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukan Nilai Sisi AB / sisi sejajar CD :"
+        android:layout_alignTop="@+id/abtxt"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:layout_alignEnd="@+id/textView29" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/abtxt"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+        android:text="Masukan Nilai Sisi BC :" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukan Nilai Sisi CD / Sisi Sejajar AB :"
+        android:layout_below="@+id/bctxt"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/textView34" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ttxt"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="11dp"
+        android:textStyle="bold"
+        android:text="Masukan Nilai Sisi DA :" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/hasil"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="27dp"
+        android:textStyle="bold"
+        android:text="HASIL :" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView33"
+        android:layout_marginTop="12dp"
+        android:textStyle="bold"
+        android:text="Masukan Nilai Tinggi :" />
+
+</RelativeLayout>
